@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Maker JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Password<span id="colorer">Maker</span></h1>
+    <div class="strong-password">
+        <h4>Make passwords that are colder than ice</h4>
+        <div class="container">
+            <div class="options">
+                <label for="characters">Length:</label>
+                <input id="characters" type="number" min="8" max="128" value="20" required>
+                <label for="special">Special Characters</label>
+                <input id="special" type="checkbox" checked>
+            </div>
+            <button id="generate">Generate</button>
+            <div class="result"><input id="generated" type="text"><br>
+                <button id="copy">Click to copy</button>
+            </div>
+        </div>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
