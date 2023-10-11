@@ -40,12 +40,12 @@ function generatePassword() {
 
 function copyToClipboard() {
   const passwordText = passwordField.value;
-  navigator.clipboard.writeText(passwordText);
   if (!passwordText) {
     lengthField.focus();
     alert("Generate a password first");
     return;
   }
+  navigator.clipboard.writeText(passwordText);
   copy.textContent = "Password Copied!";
 }
 
